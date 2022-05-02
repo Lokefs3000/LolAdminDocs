@@ -1,0 +1,155 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(74, 176, 239);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+#content {
+    max-width: 1000px;
+    min-width: 200px;
+    height: 100%;
+    resize: both;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#creditsLink {
+    position: absolute;
+    bottom: 0;
+    text-decoration: 0;
+    color: black;
+    font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: text-shadow 0.2s;
+}
+
+#creditsLink:hover {
+    text-shadow: 0 0 1px black;
+}
+
+#creditsTitle {
+    position: absolute;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%) scale(2);
+}
+
+#Credit {
+    position: fixed;
+    transform: translateX(-50%) scale(2);
+    left: 50%;
+}
+
+#CreditLink {
+    text-decoration: 0;
+    color: blue;
+    transition: text-shadow 0.2s;
+}
+
+#CreditLink:hover {
+    text-shadow: 0 0 1px blue;
+}
+
+#Title404 {
+    position: absolute;
+    color: black;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) scale(4);
+}
+
+#Under404 {
+    position: absolute;
+    color: black;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) scale(2);
+}
+
+#Title {
+    position: absolute;
+    color: black;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%) scale(3);
+}
+
+#DocLink {
+    position: fixed;
+    color: black;
+    left: 50%;
+    text-decoration: none;
+    transform: translateX(-50%) scale(3);
+    transition: text-shadow 0.2s;
+}
+
+#DocLink:hover {
+    text-shadow: 0 0 1px black;
+}
+
+#info {
+    position: relative;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%) scale(2);
+    width: 40%;
+}
+
+#underTitle {
+    position: fixed;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%) scale(2);
+}
+
+#code {
+    position: fixed;
+    background-color: rgb(37, 37, 37);
+    left: 50%;
+    min-height: 20px;
+    transform: translateX(-50%) scale(2);
+    width: 40%;
+    color: white;
+    font-size: 10px;
+    overflow: auto;
+}
+
+#infoBox {
+    height: 60px;
+    width: 700px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px inset black;
+}
+
+#infoBoxTitle {
+    position: fixed;
+    left: -21.5%;
+    top: -26px;
+    width: 999px;
+    transform: scale(0.7);
+    border-bottom: 1px inset black;
+}
+
+#infoBoxDetails {
+    position: fixed;
+    top: 3px;
+}
+
+#MiniTitle {
+    width: 100%;
+    text-align: center;
+    transform: scale(2);
+}
+
+#MinierTitle {
+    width: 100%;
+    text-align: center;
+    transform: scale(1.5);
+}
