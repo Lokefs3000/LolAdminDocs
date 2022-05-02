@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>LolAdmin Docs</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body style="height: 133%;">
+        <div id="content">
+            <h1 id="Title" style="top: 60px;">Commands</h1>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<p id="info">
+				Here we will list all of the commands you can use in a plugin,
+				and in the next step we will program one!
+			</p>
+
+			<br>
+
+			<h3 id="MiniTitle">Reciving</h3><br>
+
+			<div id="infoBox">
+				<h2 id="infoBoxTitle">CommandSent( Instance: Player, Table: Command Arguments )</h2>
+				<p id="infoBoxDetails">This function is executed when a command is sent in chat.</p>
+			</div><br><br><br><br>
+
+			<div id="infoBox">
+				<h2 id="infoBoxTitle">CommandExecuted( Instance: Player, Table: Command Arguments )</h2>
+				<p id="infoBoxDetails">This function is executed when the specific command is sent in chat.</p>
+			</div><br><br><br><br>
+
+			<h3 id="MiniTitle">Sending</h3>
+
+			<h4 id="MinierTitle">Notification Module</h4>
+
+			<div id="infoBox">
+				<h2 id="infoBoxTitle">SendNotification( Instance: Gui, String: NotificationTitle, String: NotificationContent)</h2>
+				<p id="infoBoxDetails">You can use this function to send a notification to a specific player.</p>
+			</div><br><br><br><br>
+
+			<h4 id="MinierTitle">Gui Module</h4>
+
+			<div id="infoBox">
+				<h2 id="infoBoxTitle">GetAdminGui( Instance: Player )</h2>
+				<p id="infoBoxDetails">Gets the admin modules gui object.</p>
+			</div><br><br><br><br>
+
+			<h3 id="MiniTitle">Variables</h3>
+
+			<h4 id="MinierTitle">Plugin</h4>
+
+			<div id="infoBox">
+				<h2 id="infoBoxTitle">Command = String: Command</h2>
+				<p id="infoBoxDetails">Set this string to whatever the first command is gonna be.</p>
+			</div><br><br><br><br>
+
+			<div id="infoBox">
+				<h2 id="infoBoxTitle">MinClearance = Int: Clearance</h2>
+				<p id="infoBoxDetails">Use this to set the minimum rank required to execute the 
+					<br>NonAdmin = 0, VIP = 1, Mod = 2, Admin = 3, HeadAdmin = 4, Owner = 5
+				</p>
+			</div><br><br><br><br><br><br>
+
+			<a id="DocLink" href="Commands.html"><p>First plugin</p></a><br><br><br><br>
+
+            <a id="creditsLink" href="../index.html">Return to selection</a>
+        </div>
+    </body>
+</html>

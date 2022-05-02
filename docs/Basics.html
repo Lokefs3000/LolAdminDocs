@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>LolAdmin Docs</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body style="height: 348%;">
+        <div id="content">
+            <h1 id="Title" style="top: 60px;">Basics</h1>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <p id="info">
+                Lol Admin is a simple to use admin tool for your game.
+                It is designed to be a simple to use and easy to understand.
+                and its a good tool for moderation and maybe a little fun!
+                <br>
+                Lol Admin is automatically setup when you insert it into your game but we reccomend customize it to your needs.
+            </p><br><br><br><br>
+
+            <h2 id="underTitle">Customization</h2><br><br><br><br><br><br><br>
+
+            <p id="info">
+                To customize the admin tool, you will need to create a config file.
+                Luckily it already comes with one!
+                So once you have it in your game, open up the model and you should see a script called: Setup.
+                If you dont see it, try removing the model and re-adding it.
+                If you do see it, you can open it up and edit the script called Configuration.
+                This script is where you will set up the admin tool.
+                Now the script should look something like this:
+            </p><br><br><br><br><br><br>
+
+            <div id="code" style="top: 1100px;">
+<font style="color: rgb(248, 109, 124);">local</font> config = {}<br>
+<br>
+config.Configuration = {<p style="margin-left: 20px">
+	<font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+	HeadAdmin = {<br>
+		<br>
+	},<br>
+	<br>
+	<font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+	Admin = {<br>
+		<br>
+	},<br>
+	<br>
+	<font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+	Mod = {<br>
+        <br>
+	},<br>
+	<br>
+	<font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+	VIP = {<br>
+        <br>
+	},<br>
+	<br>
+	<font style="color: rgb(102, 102, 102);">--Role for vip server owners</font><br>
+	VIPServerOwnersRole = <font style="color: rgb(173, 241, 149)">"Mod"</font>,<br>
+	<br>
+	<font style="color: rgb(102, 102, 102);">--Role for the game owner friends</font><br>
+	OwnerServerFriendsRole = <font style="color: rgb(173, 241, 149)">"NonAdmin"</font>,<br>
+	<br>
+	<font style="color: rgb(102, 102, 102);">--Command prefix</font><br>
+	Prefix = <font style="color: rgb(173, 241, 149)">"!"</font><br></p>
+}<br>
+<br>
+<font style="color: rgb(248, 109, 124);">return</font> config
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <p id="info">
+                Now if we want to add lets say a new Admin. We will need to add them to the HeadAdmin table.
+                To do this, we will need to open up the Configuration script and add them to the HeadAdmin table.
+                Lets add a new string with a player name like this <font style="color: rgb(173, 241, 149);">"RacerDreng"</font>.
+                It should look something like this at last
+            </p><br><br><br><br><br><br>
+
+            <div id="code" style="top: 2280px;">
+                <font style="color: rgb(248, 109, 124);">local</font> config = {}<br>
+                <br>
+                config.<font style="color: rgb(97, 161, 241);">Configuration</font> = {<p style="margin-left: 20px">
+                    <font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+                    HeadAdmin = {<br>
+                        <font style="color: rgb(173, 241, 149)">"RacerDreng"</font><br>
+                    },<br>
+                    <br>
+                    <font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+                    Admin = {<br>
+                        <br>
+                    },<br>
+                    <br>
+                    <font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+                    Mod = {<br>
+                        <br>
+                    },<br>
+                    <br>
+                    <font style="color: rgb(102, 102, 102);">--Game HeadAdmin's</font><br>
+                    VIP = {<br>
+                        <br>
+                    },<br>
+                    <br>
+                    <font style="color: rgb(102, 102, 102);">--Role for vip server owners</font><br>
+                    VIPServerOwnersRole = <font style="color: rgb(173, 241, 149)">"Mod"</font>,<br>
+                    <br>
+                    <font style="color: rgb(102, 102, 102);">--Role for the game owner friends</font><br>
+                    OwnerServerFriendsRole = <font style="color: rgb(173, 241, 149)">"NonAdmin"</font>,<br>
+                    <br>
+                    <font style="color: rgb(102, 102, 102);">--Command prefix</font><br>
+                    Prefix = <font style="color: rgb(173, 241, 149)">"!"</font><br></p>
+                }<br>
+                <br>
+                <font style="color: rgb(248, 109, 124);">return</font> config
+                            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                            <p id="info">
+                                Now once you have added the new HeadAdmin, you will need to restart the server.
+                                And of course this will work with all other Role tabs as well.
+                                <br>
+                                Now that you understand how to setup the modules configuration you can move on to the next step!
+                            </p><br><br><br>
+
+                            <a id="DocLink" href="Commands.html"><p>Commands</p></a><br><br><br><br>
+
+            <a id="creditsLink" href="../index.html">Return to selection</a>
+        </div>
+    </body>
+</html>
